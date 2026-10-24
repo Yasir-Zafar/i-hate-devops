@@ -1,0 +1,25 @@
+:root { --fg: #1c2530; --muted: #5b6672; --accent: #1a5fb4; --line: #d9dee4; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 2rem 1.25rem 3rem;
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--fg);
+  background: #fff;
+}
+header { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+h1 { margin: 0 0 .25rem; font-size: 2rem; }
+h2 { margin: 2rem 0 .5rem; font-size: 1.2rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+h3 { margin: 1rem 0 .15rem; font-size: 1rem; }
+p { margin: .25rem 0; }
+ul { margin: .25rem 0; padding-left: 1.2rem; }
+a { color: var(--accent); }
+.meta { color: var(--muted); }
+.download { display: inline-block; margin-top: .5rem; padding: .35rem .8rem; border: 1px solid var(--accent); border-radius: 4px; text-decoration: none; }
+.download:hover { background: var(--accent); color: #fff; }
+footer { margin-top: 3rem; padding-top: .75rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6e9ed; --muted: #9aa5b1; --accent: #6ea8fe; --line: #333c47; }
+  body { background: #11161c; }
+}

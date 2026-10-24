@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Yasir Zafar (23L-3029)</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Yasir Zafar</h1>
+    <p class="meta">Roll number: 23L-3029 &middot; <a href="mailto:l223029@lhr.nu.edu.pk">l223029@lhr.nu.edu.pk</a></p>
+    <p><a class="download" href="/cv.pdf" download>Download CV (PDF)</a></p>
+  </header>
+
+  <main>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BS Computer Science</strong>, FAST NUCES &mdash; 2023 to 2027. Currently in the seventh semester; coursework includes DevOps.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Linux and Bash scripting, file permissions, cron-style scheduling</li>
+        <li>Git (branching, remotes, collaboration workflow)</li>
+        <li>Docker and Docker Compose, multi-container applications</li>
+        <li>Node.js and Express, REST APIs, PostgreSQL</li>
+        <li>AWS fundamentals: S3, IAM roles and policies, EC2, Lambda</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Task Tracker (Docker Compose)</h3>
+        <p>A three-service task application: an Nginx frontend, a Node.js/Express API and a PostgreSQL 16 database. Services sit on separate networks, use health checks to control start-up order, and keep data in a named volume.</p>
+      </article>
+      <article>
+        <h3>CSV Data Analyzer</h3>
+        <p>A containerised Node.js web app that accepts a CSV upload (5 MB limit), parses it on the server and draws the result with Chart.js. Includes a health endpoint and a Dockerfile.</p>
+      </article>
+      <article>
+        <h3>This CV, hosted on AWS</h3>
+        <p>The same CV served twice from one private S3 bucket: by Apache on an EC2 instance that re-syncs every few minutes, and by a Python Lambda function behind a function URL. Access uses least-privilege IAM roles; no access keys are used.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>Hosted on: {{HOSTED_ON}}</footer>
+</body>
+</html>

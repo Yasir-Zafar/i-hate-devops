@@ -1,0 +1,3 @@
+The Lambda role also has this AWS managed policy attached (basic logging only):
+arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+The inline policy is lambda-permissions.json.
